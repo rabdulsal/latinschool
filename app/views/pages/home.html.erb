@@ -1,0 +1,83 @@
+<div class="center hero-unit">
+	<h1>Latin School Chicago Flag Project</h1>
+</div>
+
+<div class="flag">
+	<%= image_tag "Chicago-muni-flag.png" %>	
+	<a href="#starModalone" role="button" class="star-one" data-toggle="modal"></a>	
+	<a href="#starModaltwo" role="button" class="star-two" data-toggle="modal"></a>
+	<a href="#starModalthree" role="button" class="star-three" data-toggle="modal"></a>
+	<a href="#starModalfour" role="button" class="star-four" data-toggle="modal"></a>
+</div>
+
+<div>
+	<!-- Button to trigger modal -->
+	<a href="#flagModal" role="button" class="btn" data-toggle="modal">Test Modal button</a>
+	 
+	<!-- Star Modal 1 -->
+	<div id="starModalone" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">Fort Dearborn</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p>
+	    	<%= image_tag "1st Star.jpg" %>
+	    	<!-- <iframe width="560" height="315" src="http://www.youtube.com/embed/IkknxPl2xMs" frameborder="0" allowfullscreen></iframe> -->
+	    </p>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Back</button>	    
+	  </div>
+	</div>
+
+	<!-- Star Modal 2 -->
+	<div id="starModaltwo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">Great Chicago Fire</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p>
+	    	<%= image_tag "2nd Star.jpg" %>
+	    	<!-- <iframe width="530" height="315" src="http://www.youtube.com/embed/PaavsZhbCHQ" frameborder="0" allowfullscreen></iframe>	 -->    	
+	    </p>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Back</button>
+		</div>
+	</div>	
+	
+	<!-- Star Modal 3 -->
+	<div id="starModalthree" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">World's Columbian Exposition of 1893</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p>
+	    	<%= image_tag "3rd Star.jpg" %>
+	    	<%#= image_tag "http://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Defense_Henry_Hering.jpg/505px-Defense_Henry_Hering.jpg" %>	    	
+	    </p>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Back</button>
+		</div>
+	</div>
+
+	<!-- Star Modal 4 -->
+	<div id="starModalfour" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">Century of Progress Exposition - Chicago's World's Fair</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p>
+	    	<%= image_tag "4th Star.jpg" %>
+	    	<%#= image_tag "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Chicago_world%27s_fair%2C_a_century_of_progress%2C_expo_poster%2C_1933%2C_2.jpg/401px-Chicago_world%27s_fair%2C_a_century_of_progress%2C_expo_poster%2C_1933%2C_2.jpg" %>
+	    </p>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Back</button>
+		</div>
+	</div>

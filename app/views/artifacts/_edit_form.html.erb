@@ -1,0 +1,45 @@
+<%= form_for @artifact, :url => artifact_path(@artifact), :html => { :multipart => true } do |f| %>
+  <% if @artifact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@artifact.errors.count, "error") %> prohibited this artifact from being saved:</h2>
+
+      <ul>
+      <% @artifact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :contributors %><br />
+    <%= f.text_field :contributors %>
+  </div>
+  <div class="field">
+    <%= f.label :video %><br />
+    <%= f.file_field :video %>
+  </div>
+  <div class="field">
+    <%= f.label :typed_text %><br />
+    <%= f.text_area :typed_text %>
+  </div>
+  <div class="field">
+    <%= f.label :uploaded_text %><br />
+    <%= f.file_field :uploaded_text %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.file_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :audio %><br />
+    <%= f.file_field :audio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

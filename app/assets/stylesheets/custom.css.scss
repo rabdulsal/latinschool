@@ -1,0 +1,61 @@
+/* @import "bootstrap"; */
+
+body {
+	/*background: #eee;*/
+	padding: 20px 0;
+	/*background: $grayLight;*/
+}
+
+.center {
+	text-align: center;
+}
+
+.flag {
+	position: relative;
+}
+
+.star-one {
+	position: absolute;
+	top: 38%;
+	left: 14%;
+	width: 14%;
+	height: 24%;
+	&:hover {
+		background: rgba(0, 0, 0, 0);	
+	}
+}
+.star-two {
+	position: absolute;
+	top: 38%;
+	left: 33%;
+	width: 14%;
+	height: 24%;
+	&:hover {
+		background: rgba(0, 0, 0, 0);	
+	}
+}
+.star-three {
+	position: absolute;
+	top: 38%;
+	left: 52%;
+	width: 14%;
+	height: 24%;
+	&:hover {
+		background: rgba(0, 0, 0, 0);	
+	}
+}
+.star-four {
+	position: absolute;
+	top: 38%;
+	left: 72%;
+	width: 14%;
+	height: 24%;
+	&:hover {
+		background: rgba(0, 0, 0, 0);	
+	}
+}
+
+#starModalone, #starModaltwo, #starModalthree, #starModalfour {
+	width: 700px;
+	margin-right: 100px;	
+}

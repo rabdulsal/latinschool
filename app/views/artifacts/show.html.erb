@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @artifact.title %>
+</p>
+
+<p>
+  <b>Contributors:</b>
+  <%= @artifact.contributors %>
+</p>
+
+<p>
+  <b>Video:</b>
+  <!-- <video src=<%=@artifact.video.url%> controls></video> -->
+  <video controls>
+  <source src=<%=@artifact.video.url%> type="video/ogg">
+  <source src=<%=@artifact.video.url%> type="video/mp4">
+  <object type="application/x-shockwave-flash" data="player.swf?video=<%=@artifact.video.url%>">
+    <param name="movie" value="player.swf?video=<%=@artifact.video.url%>">
+  </object>
+</video>
+  <%#= image_tag @artifact.video.url %>
+</p>
+
+<p>
+  <b>Typed text:</b>
+  <%= @artifact.typed_text %>
+</p>
+
+<p>
+  <b>Uploaded text:</b>
+  <!-- <iframe src=<%#= @artifact.uploaded_text %> height="300" width="300" ></iframe> -->
+  <%= link_to "text", @artifact.uploaded_text.url%>
+  
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= image_tag @artifact.image.url(:medium) %>
+</p>
+
+<p>
+  <b>Audio:</b>
+  <audio controls>
+  <source src=<%=@artifact.audio.url%> type="audio/ogg">
+  <source src=<%=@artifact.audio.url%> type="audio/mpeg">
+  <object type="application/x-shockwave-flash" data="player.swf?audio=<%=@artifact.audio.url%>">
+    <param name="movie" value="player.swf?audio=#<%=@artifact.audio.url%>">
+  </object>
+</audio>
+</p>
+
+
+<%= link_to 'Edit', edit_artifact_path(@artifact) %> |
+<%= link_to 'Back', artifacts_path %>
